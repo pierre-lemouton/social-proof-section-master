@@ -1,0 +1,245 @@
+/*attention : page adaptée uniquement aux écrans mobile: 375px et desktop: 1440px*/
+
+body
+{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Spartan', sans-serif;
+    background-image: url(images/bg-pattern-bottom-desktop.svg), url(images/bg-pattern-top-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right, top left;
+    background-size: 80%, 50%;
+}
+
+.haut
+{
+    display: flex;
+    justify-content: space-between;
+    height: 230px;
+    width: 1100px;
+}
+
+.haut p, .bas
+{
+    font-size: 0.8em;
+    
+}
+.haut p, .bas p
+{
+    line-height: 1.5em;
+}
+
+.texte
+{
+    display: flex;
+    flex-direction: column;
+    max-width: 425px;
+}
+
+.texte h1
+{
+    font-size: 2.7em;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    line-height: 1.2em;
+}
+
+.texte p
+{
+    color: hsl(303, 10%, 53%);
+    font-weight: 400;
+}
+
+.notes
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 545px;
+}
+
+.etoiles_description
+{
+    display: flex;
+    padding: 15px 20px 15px 20px;
+    background-color: hsl(300, 24%, 96%);
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    border-radius: 8px;
+}
+
+.etoiles_description p
+{
+    padding-left: 35px;
+}
+
+.etoiles_description:nth-child(1)
+{
+    margin-right: 100px;
+}
+
+.etoiles_description:nth-child(2)
+{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.etoiles_description:nth-child(3)
+{
+    margin-left: 100px;
+}
+
+.bas
+{
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    height: 265px;
+}
+
+.container_comm_user
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 235px;
+    width: 350px;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 8px;
+}
+
+.container_comm_user h2
+{
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+
+.container_comm_user p
+{
+    margin: 0 30px 0 30px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+}
+
+.container_comm_user h3
+{
+    color: hsl(333, 80%, 67%);
+    font-weight: 400;
+}
+
+.container_comm_user:nth-child(2)
+{
+    margin-top: 15px;
+}
+
+.container_comm_user:nth-child(3)
+{
+    margin-top: 30px;
+}
+
+.photo_nom
+{
+    display: flex;
+    height: 40px;
+    margin-left: 30px;
+}
+
+.titres
+{
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.photo_nom img
+{
+  border: none;
+  -moz-border-radius : 75px;
+  -webkit-border-radius : 75px;
+  border-radius : 75px;
+  width: 40px;
+}
+
+@media screen and (max-width: 375px)
+{
+    body
+    {
+        background-size: 100%, 100%;
+        justify-content: start;
+    }
+
+    .haut
+    {
+        height: 500px;
+        width: 330px;
+        margin-top: 80px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .texte h1 
+    {
+        margin: 0px 0 30px 0;
+        font-size: 2em;
+    }
+
+    .texte p
+    {
+        width: 320px;
+        margin-bottom: 25px;
+    }
+
+    .notes
+    {
+        height: 265px;
+        width: 330px;
+        align-items: center;
+    }
+
+    .etoiles_description
+    {
+        height: 70px;
+        width: 100%;
+        margin-top: 15px;
+        padding: 5px 0 0 0;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .etoiles_description p
+    {
+        padding-left: 0;
+    }
+
+    .etoiles_description:nth-child(1), .etoiles_description:nth-child(2), .etoiles_description:nth-child(3)
+    {
+        margin: 0;
+    }
+
+    .stars
+    {
+        word-spacing: 8px;
+    }
+
+    .bas
+    {
+        height: 735px;
+        width: 330px;
+        margin: 50px 0 80px 0;
+        flex-direction: column
+    }
+
+    .container_comm_user
+    {
+        width: 100%;
+    }
+    
+    .container_comm_user:nth-child(2), .container_comm_user:nth-child(3)
+    {
+        margin-top: 0;
+    }
+}
